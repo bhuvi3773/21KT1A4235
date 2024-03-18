@@ -1,0 +1,19 @@
+<html>
+
+<body>
+    <script>
+        function isPalindrome(number) {
+            const numString = String(number);
+            const reversedString = numString.split('').reverse().join('');
+            return numString === reversedString;
+        }
+        const inputNumber = 1113111;
+        if (isPalindrome(inputNumber)) {
+            document.writeln(`${inputNumber} is a palindrome.`);
+        } else {
+            document.writeln(`${inputNumber} is not a palindrome.`);
+        }
+    </script>
+</body>
+
+</html>

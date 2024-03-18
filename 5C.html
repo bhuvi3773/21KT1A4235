@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <script>
+        class User {
+            validate(username, password) {
+                if (username === password) {
+                    return "Login Successful";
+                } else {
+                    return "Invalid Username and Password";
+                }
+            }
+        }
+        function loginValidate() {
+            const username = document.forms["login"]["uname"].value;
+            const password = document.forms["login"]["upwd"].value;
+            const user = new User();
+            const result = user.validate(username, password);
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <form name="login">
+        <table cellspacing="15px">
+            <tr>
+                <td><b>User Name</b></td>
+                <td><input type="text" name="uname" required /></td>
+            </tr>
+            <tr>
+                <td><b>Password</b></td>
+                <td><input type="password" name="upwd" required /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="Login" onclick="loginValidate()" />&nbsp; &nbsp;
+                    <input type="reset" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <p>This page displays 10 random numbers generated with help of Math functions.</p>
+    <p>See the numbers in console window.</p>
+    <script>
+        var i = 1
+        numberGenerater()
+        function numberGenerater() {
+            var num = Math.random() * 101
+            num = Math.floor(num)
+            document.writeln(num + "\n");
+            if (i <= 10) {
+                i++
+                setTimeout(numberGenerater, 3000)
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<html>
+
+<body>
+    <p id="tickets"></p>
+    <p id="price"></p>
+    <p id="tprice"></p>
+    <p id="discount"></p>
+    <p id="ticketprice"></p>
+    <p id="dis"></p>
+    <script>
+        var tickets = window.prompt("Enter the number of tickets:");
+        const price = 150;
+        const discount = 150 * (10 / 100);
+        document.getElementById("tickets").innerHTML = "Number of tickets:" + tickets;
+        document.getElementById("price").innerHTML = "Price for each ticket:" + price;
+        document.getElementById("tprice").innerHTML = "Price for all tickets:" + (tickets * tprice);
+        document.getElementById("discount").innerHTML = "Festive season discount offer:10% ";
+        document.getElementById("ticketprice").innerHTML = "Price of tickets with discount: " + ((tickets * price) - (tickets * discount));
+    </script>
+</body>
+
+</html>
